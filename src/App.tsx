@@ -1,10 +1,15 @@
-import './globals.css';
+import "./globals.css";
+import { Routes, Route } from "react-router-dom";
 const App = () => {
   return (
-    <h1 className="text-3xl font-bold underline text-orange-900">
-    Hello world!
-  </h1>
-  )
-}
+    <main className="flex h-screen">
+      <Routes>
+        {/*PUBLIC ROUTS */}
+        <Route />
+        {/*PRIVATE ROUTS */}
+      </Routes>
+    </main>
+  );
+};
 
-export default App
+export default App;
