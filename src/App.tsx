@@ -1,3 +1,4 @@
+import SignInForm from "./_auth/forms/SignInForm";
 import "./globals.css";
 import { Routes, Route } from "react-router-dom";
 const App = () => {
@@ -5,8 +6,9 @@ const App = () => {
     <main className="flex h-screen">
       <Routes>
         {/*PUBLIC ROUTS */}
-        <Route />
+        <Route path="/sign-in" element={<SignInForm />}/>
         {/*PRIVATE ROUTS */}
+        {/* <Route index element={<Home />} */}
       </Routes>
     </main>
   );
